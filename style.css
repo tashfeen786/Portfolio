@@ -1,0 +1,191 @@
+* {
+      margin: 0;
+      padding: 0;
+      font-family: "SUSE", sans-serif;
+  }
+
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+  }
+
+  .header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+  }
+.navbar {
+    padding: 10px 5px;
+    margin-top: 10px;
+}
+
+.navbar a {
+    margin-right: 20px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    position: relative;
+    /* Allowing use of the ::after pseudo-element */
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    /* Ensure the line stays directly under the text */
+    left: 0;
+    width: 0;
+    height: 2px;
+    /* Thickness of the line */
+    background-color: rgba(255, 217, 0, 0.664);
+    /* Color of the line */
+    transition: width 0.3s ease-in-out;
+    /* Smooth transition for the line */
+}
+
+.navbar a.active {
+    color: rgba(255, 217, 0, 0.664);
+    /* Highlight the active link */
+     
+}
+
+.navbar a.active::after {
+    width: 100%;
+    /* Full underline for the active link */
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    /* Expands the line to full width on hover */
+}
+
+.navbar a:hover {
+    color: rgba(255, 217, 0, 0.664);
+    /* Change text color on hover */
+    transition: 0.3s ease-in;
+    /* Smooth color transition */
+}
+
+  .Name a {
+      color: white;
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      margin: 20px;
+      -webkit-user-select: none;
+      text-decoration: none;
+  }
+
+  /* Main container css */
+  .container {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 80px;
+      /* Padding to prevent overlap with navbar */
+  }
+
+  .container1 {
+      padding: 150px 150px;
+      color: white;
+      font-size: 1.3rem;
+  }
+
+  .content {
+      line-height: 50px;
+  }
+
+  .content h1 {
+      width: -10px;
+  }
+
+  .content p {
+      font-size: 0.9rem;
+      color: rgba(255, 217, 0, 0.664);
+  }
+
+  .content h1 span,
+  span {
+      color: rgba(255, 217, 0, 0.664);
+      font-size: 3rem;
+  }
+
+  .container2 img {
+      width: 100vh;
+  }
+
+  .color {
+      color: rgba(255, 217, 0, 0.664);
+  }
+
+  button {
+      padding: 15px 25px;
+      border-radius: 30px;
+      border: 1px solid white;
+      background-color: black;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+  }
+
+  button:hover {
+      color: black;
+      background-color: rgba(255, 217, 0, 0.664);
+      transition: 0.3s ease-out;
+  }
+
+  .downloadbutton {
+      margin-top: 20px;
+  }
+
+  .about {
+      margin-top: 150px;
+      color: white;
+
+
+  }
+
+  .about .section2 h1 {
+      margin-bottom: 50px;
+      font-size: 3rem;
+  }
+
+  .aboutcontent {
+      display: flex;
+  }
+
+  .section1 {
+      width: 40%;
+      padding: 100px;
+  }
+
+  .section2 {
+      width: 60%;
+      padding: 10px 80px;
+  }
+
+  .section2 pre {
+      margin: 10px;
+      padding-top: 20px;
+  }
+
+  .section2 p {
+      margin-bottom: 20px;
+  }
+
+  .Project {
+      color: rgba(255, 217, 0, 0.664);
+      font-size: 1.2rem;
+      margin-right: 10px;
+  }
+
+  .projectcontainer {
+      margin-top: 50px;
+  }
