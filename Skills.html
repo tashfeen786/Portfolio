@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+
+      .outer-container{
+       margin: 100px;
+      }
+      /* Skills Section */
+      .skills {
+        width: 80%;
+        max-width: 600px;
+        
+      }
+
+      .skills h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 2em;
+        color: #fff;
+      }
+
+      /* Skill Container */
+      .skill-container {
+        margin-bottom: 20px;
+      }
+
+      .skill-title {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+        display: block;
+        color: #fff;
+      }
+
+      /* Skill Bar */
+      .skill-bar {
+        width: 100%;
+        height: 20px;
+        background-color: #333;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .skill-level {
+        height: 100%;
+        border-radius: 10px;
+        animation: fillSkill 2s ease-in-out forwards;
+      }
+
+    
+     /* Percentage label inside the bar */
+.skill-level::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+.html {
+    background-color: #00FF41;
+    width: 0%;
+    animation-name: htmlFill;
+}
+
+.css {
+    background-color: #00E0FF;
+    width: 0%;
+    animation-name: cssFill;
+}
+
+.js {
+    background-color: #FF3131;
+    width: 0%;
+    animation-name: jsFill;
+}
+
+.python {
+    background-color: #920630;
+    width: 0%;
+    animation-name: pythonFill;
+}
+
+.powerbi {
+    background-color: #FFD700;
+    width: 0%;
+    animation-name: powerbiFill;
+}
+
+@keyframes htmlFill {
+    to {
+        width: 70%; 
+    }
+}
+
+@keyframes cssFill {
+    to {
+        width: 90%; 
+    }
+}
+
+@keyframes jsFill {
+    to {
+        width: 40%; 
+    }
+}
+
+@keyframes pythonFill {
+    to {
+        width: 80%; 
+    }
+}
+
+@keyframes powerbiFill {
+    to {
+        width: 90%; 
+    }
+}
+
+.percentage{
+  font-size: 1rem;
+  color:rgba(255, 217, 0, 0.664) ;
+  text-align: end;
+}
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="Name"><a href="index.html">Tashfeen Portfolio</a></h1>
+
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="Services.html">Services</a>
+        <a href="Skills.html" class="active">Skills</a>
+        <a href="Projects.html">Projects</a>
+        <a href="Blogs.html">My Blogs</a>
+        <button>Book With Us</button>
+      </nav>
+    </div>
+
+  <div class="outer-container">
+      <section class="skills"></section>
+      <h1>My Skills</h1>
+      <div class="skill-container">
+        <span class="skill-title">HTML & css <h1 class="percentage">70%</h1></span>
+        <div class="skill-bar">
+          <div class="skill-level html"></div>
+        </div>
+      </div>
+      <div class="skill-container">
+        <span class="skill-title">Power Bi and Excel <h1 class="percentage">90%</h1></span>
+        <div class="skill-bar">
+          <div class="skill-level css"></div>
+        </div>
+      </div>
+      <div class="skill-container">
+        <span class="skill-title">JavaScript & Jquery <h1 class="percentage">40%</h1></span>
+        <div class="skill-bar">
+          <div class="skill-level js"></div>
+        </div>
+      </div>
+      <div class="skill-container">
+        <span class="skill-title">Python & sql <h1 class="percentage">50%</h1>  </span>
+        <div class="skill-bar">
+          <div class="skill-level python"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+  </body>
+</html>
